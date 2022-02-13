@@ -16,6 +16,7 @@ def group_add(name):
               if row[1]:
                   l.append(row[1])
     print(l)
+    open('geckodriver.exe','rt')
     driver = webdriver.Firefox()
     driver.maximize_window()
     r=driver.get('https://web.whatsapp.com/')
